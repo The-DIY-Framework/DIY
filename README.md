@@ -1,6 +1,6 @@
 # DIY Framework
 
-DIY is an open?source, no?code framework that democratizes AI development. It empowers non?technical users to create sophisticated AI applications using an intuitive visual interface, integrated AI models, dynamic memory management, and advanced multi?agent orchestration. Built with TypeScript across the stack, DIY ensures a robust, scalable, and developer?friendly experience.
+DIY is an open‑source, no‑code framework that democratizes AI development. It empowers non‑technical users to create sophisticated AI applications using an intuitive visual interface, integrated AI models, dynamic memory management, and advanced multi‑agent orchestration. Built with TypeScript across the stack, DIY ensures a robust, scalable, and developer‑friendly experience.
 
 ---
 
@@ -31,56 +31,62 @@ DIY is an open?source, no?code framework that democratizes AI development. It em
 
 ## Overview
 
-DIY is designed to put AI development into the hands of everyone. By leveraging visual workflow builders, integrated AI model hubs, memory/context management, and a modular multi?agent system, this framework enables rapid prototyping and deployment of AI-powered applications. All components�from the frontend to backend services�are built using TypeScript, ensuring type safety, consistency, and easier collaboration.
+DIY is designed to put AI development into the hands of everyone. By leveraging visual workflow builders, integrated AI model hubs, memory/context management, and a modular multi‑agent system, this framework enables rapid prototyping and deployment of AI-powered applications. All components—from the frontend to backend services—are built using TypeScript, ensuring type safety, consistency, and easier collaboration.
 
 ---
 
 ## Features
 
-### ?? Visual Workflow Builder
-- **Drag?and?Drop Interface:** Create and manage AI workflows without code.
-- **Real?Time Preview:** Instantly see results and make adjustments.
-- **Reusable Components:** Build workflows using pre?built components that can be extended or customized.
+### 🎨 Visual Workflow Builder
+
+- **Drag‑and‑Drop Interface:** Create and manage AI workflows without code.
+- **Real‑Time Preview:** Instantly see results and make adjustments.
+- **Reusable Components:** Build workflows using pre‑built components that can be extended or customized.
 - **Version Control:** Track changes and collaborate with team members.
 
-### ?? Model Integration Hub
-- **Seamless Integration:** Connect with popular AI models (e.g., GPT?based, image generation, etc.).
-- **API Management:** Built?in support for token handling, rate limiting, and performance monitoring.
+### 🤖 Model Integration Hub
+
+- **Seamless Integration:** Connect with popular AI models (e.g., GPT‑based, image generation, etc.).
+- **API Management:** Built‑in support for token handling, rate limiting, and performance monitoring.
 - **Cost Optimization:** Monitor and optimize API usage to manage costs effectively.
 
-### ?? Memory & Context Management
-- **Vector Database:** Persist embeddings and conversation history for long?term context.
+### 💭 Memory & Context Management
+
+- **Vector Database:** Persist embeddings and conversation history for long‑term context.
 - **Context Window Management:** Ensure smooth transitions in conversations and workflows.
 - **Custom Knowledge Base:** Build and maintain a dynamic knowledge repository.
 
-### ?? Agent Creation Studio
+### 🎯 Agent Creation Studio
+
 - **Visual Agent Configuration:** Define agent behaviors, roles, and goals using an intuitive interface.
-- **Multi?Agent Coordination:** Configure inter?agent interactions and monitor their performance.
+- **Multi‑Agent Coordination:** Configure inter‑agent interactions and monitor their performance.
 - **Constraint & Goal Specification:** Set rules, constraints, and fallback strategies for agents.
 
-### ?? Multimodal Processing
+### 🎤 Multimodal Processing
+
 - **Text Processing:** Advanced natural language understanding and generation.
-- **Speech Integration:** Speech?to?text and text?to?speech capabilities.
+- **Speech Integration:** Speech‑to‑text and text‑to‑speech capabilities.
 - **Image & Video Analysis:** Tools for processing and generating images and videos.
 
-### ?? Integration Layer
-- **REST API & WebSockets:** Support for real?time applications and integrations.
-- **SDKs:** TypeScript?based SDKs for custom development and external integrations.
+### 🔗 Integration Layer
+
+- **REST API & WebSockets:** Support for real‑time applications and integrations.
+- **SDKs:** TypeScript‑based SDKs for custom development and external integrations.
 - **Export & Deployment:** Export your projects as standalone deployments or integrate them into existing infrastructures.
 
 ---
 
 ## Architecture
 
-DIY is built on a modular, multi?layered architecture designed for scalability and extensibility.
+DIY is built on a modular, multi‑layered architecture designed for scalability and extensibility.
 
 ### Frontend
 
 - **Technology:** React with TypeScript
 - **Components:**
-  - **Visual Workflow Builder:** Utilize libraries such as [react-dnd](https://react-dnd.github.io/react-dnd/about) for a dynamic drag?and?drop interface.
-  - **Real?Time Interface:** Implement WebSocket (e.g., Socket.IO) clients for live updates.
-  - **UI Components:** Build a reusable, TypeScript?based component library.
+  - **Visual Workflow Builder:** Utilize libraries such as [react-dnd](https://react-dnd.github.io/react-dnd/about) for a dynamic drag‑and‑drop interface.
+  - **Real‑Time Interface:** Implement WebSocket (e.g., Socket.IO) clients for live updates.
+  - **UI Components:** Build a reusable, TypeScript‑based component library.
 - **Tooling:** Webpack or Vite, ESLint, Prettier, Jest for testing.
 
 ### Backend
@@ -147,25 +153,26 @@ This command initializes both the frontend and backend services, launching the v
 
 ```
 /framework
-??? /frontend
-?   ??? /src
-?   ?   ??? /components         # Reusable UI components
-?   ?   ??? /pages              # Application pages and routes
-?   ?   ??? /utils              # Utility functions and hooks
-?   ??? package.json            # Frontend package configuration
-??? /backend
-?   ??? /src
-?   ?   ??? /controllers        # API endpoint logic
-?   ?   ??? /services           # Core business logic
-?   ?   ??? /models             # Database models (TypeORM/Prisma)
-?   ?   ??? /routes             # Express/NestJS routes
-?   ??? package.json            # Backend package configuration
-??? /docker
-?   ??? Dockerfile.frontend     # Dockerfile for the frontend service
-?   ??? Dockerfile.backend      # Dockerfile for the backend service
-?   ??? docker-compose.yml      # Orchestration for local development
-??? README.md                   # This supercharged README
+├── /frontend
+│   ├── /src
+│   │   ├── /components         # Reusable UI components
+│   │   ├── /pages              # Application pages and routes
+│   │   └── /utils              # Utility functions and hooks
+│   └── package.json            # Frontend package configuration
+├── /backend
+│   ├── /src
+│   │   ├── /controllers        # API endpoint logic
+│   │   ├── /services           # Core business logic
+│   │   ├── /models             # Database models (TypeORM/Prisma)
+│   │   └── /routes             # Express/NestJS routes
+│   └── package.json            # Backend package configuration
+├── /docker
+│   ├── Dockerfile.frontend     # Dockerfile for the frontend service
+│   ├── Dockerfile.backend      # Dockerfile for the backend service
+│   └── docker-compose.yml      # Orchestration for local development
+└── README.md                   # This supercharged README
 ```
+
 ---
 
 ## Developer Guide
@@ -180,13 +187,13 @@ This command initializes both the frontend and backend services, launching the v
 
 - **Version Control:** Git repository with a branch strategy for features, bug fixes, and releases.
 - **Containerization:** Docker ensures environment consistency from development to production.
-- **Deployment:** Use Kubernetes for managing production workloads with auto?scaling, monitoring, and logging capabilities.
+- **Deployment:** Use Kubernetes for managing production workloads with auto‑scaling, monitoring, and logging capabilities.
 
 ---
 
 ## Contributing
 
-We highly welcome contributions! Here�s how you can help:
+We highly welcome contributions! Here’s how you can help:
 
 1. **Fork the Repository:** Create your fork on GitHub.
 2. **Clone & Create a Branch:** Clone your fork locally and create a feature branch.
